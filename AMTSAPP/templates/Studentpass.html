@@ -1,0 +1,40 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Student Pass HTML</title>
+</head>
+<body background="{% static 'images/hotel_feture_1.jpg' %}">	<center>
+	<form action="/StudentPass/">
+		<table border="3">
+			<h1>Student Pass Form</h1>
+			<tr>
+				<td>Collage Name:</td>
+				<td><input type="text" name="cname"></td>
+			</tr>
+			<tr>
+				<td>Current Course:</td>
+				<td><input type="text" name="ccourse"></td>
+			</tr>
+			<tr>
+				<td>Current Year:</td>
+				<td><input type="text" name="cyear"></td>
+			</tr>
+			<tr>
+				<td>Photo:</td>
+				<td><input type="file" name="cphoto"></td>
+			</tr>
+			<tr>
+				<td>Fees Receipt Of Collage:</td>
+				<td><input type="file" name="cfees"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit"></td>
+			</tr>
+		</table>
+	</form>
+	</center>
+</body>
+</html>

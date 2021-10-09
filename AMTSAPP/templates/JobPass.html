@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Job Pass HTML</title>
+</head>
+<body background="{% static 'images/hotel_feture_1.jpg' %}">	<center>
+	<form action="/JobPass/">
+		<table border="3">
+			<h1>Job Pass Form</h1>
+			<tr>
+				<td>Job Name:</td>
+				<td><input type="text" name="jname"></td>
+			</tr>
+			<tr>
+				<td>Job Address:</td>
+				<td><input type="text" name="jaddress"></td>
+			</tr>
+			<tr>
+				<td>Job Letter:</td>
+				<td><input type="file" name="jletter"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="submit"></td>
+			</tr>
+		</table>
+	</form>
+	</center>
+</body>
+</html>

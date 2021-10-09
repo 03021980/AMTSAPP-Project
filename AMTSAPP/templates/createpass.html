@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login Page</title>
+</head>
+<body background="{% static 'images/hotel_feture_1.jpg' %}">
+	<center>
+		 <!--<img src="static/images/AMTS_Photo.jpeg">-->
+	<h1>Login Form</h1>
+	<form action="/createpass/" method="POST">
+		{% csrf_token %}
+		<table border="3">
+			<tr>
+				<td>UserName:</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="text" name="password"></td>
+			</tr>
+			<tr>
+					<td>Choose Your Pass:</td>
+					<td>
+						<input type="radio" id="student" name="select" value="student"><label for="student">Student Pass</label>
+						<input type="radio" id="job" name="select" value="job"><label for="job">Job Pass</label>
+						<input type="radio" id="senior" name="select" value="senior"><label for="senior">Senior Citizen Pass</label>
+					</td>
+			</tr>
+			<tr>
+				<td><center><input type="submit" value="submit" name="Submit" ></center></td>
+				<td><center><input type="reset" value="Reset" name="Reset"></center></td>
+			</tr>
+		</table>
+	</form>
+</center>
+</body>
+</html>
